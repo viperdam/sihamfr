@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport Détaillé (Plan d'Action) - Saham Loulidi</title>
+    <!-- Ajout de Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Ajout de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Police française élégante -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <!-- Style personnalisé -->
+    <style>
+        /* Styles de base */
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: ltr;
+            background-color: #f8f9fa;
+            padding-top: 70px;
+        }
+        
+        /* Style de l'en-tête */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header img {
+            max-width: 250px;
+        }
+        
+        /* Style de la barre de navigation */
+        nav {
+            background-color: #343a40;
+        }
+        nav .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+        }
+        
+        /* Style du contenu général */
+        .container {
+            margin-top: 20px;
+        }
+        .report-content h2, 
+        .report-content h3, 
+        .report-content h4 {
+            color: #343a40;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .report-content p, 
+        .report-content ul {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        /* Style de l'accordéon */
+        .accordion-section {
+            margin-bottom: 20px;
+        }
+        .accordion-section .card {
+            margin-bottom: 5px;
+            border: 1px solid rgba(0,0,0,.125);
+        }
+        .accordion-section .card-header {
+            background-color: #343a40;
+            padding: 0;
+            border: none;
+        }
+        .accordion-section .card-header .btn {
+            width: 100%;
+            text-align: left;
+            color: #fff;
+            padding: 15px;
+            position: relative;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+        }
+        .accordion-section .card-header .btn:hover,
+        .accordion-section .card-header .btn:focus {
+            color: #fff;
+            text-decoration: none;
+            background-color: rgba(255,255,255,.1);
+        }
+        .accordion-section .card-header .btn .icon-wrapper {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .accordion-section .card-header .btn i {
+            transition: transform 0.3s ease;
+            transform: rotate(180deg); /* Icônes ouvertes par défaut */
+        }
+        .accordion-section .card-header .btn.collapsed i {
+            transform: rotate(0deg); /* Icônes fermées lors du repli */
+        }
+        
+        /* Style de l'accordéon interne */
+        .inner-accordion .card-header {
+            background-color: #4a5561;
+        }
+        .inner-accordion .card-header .btn {
+            padding-left: 30px;
+        }
+        
+        /* Style des listes */
+        .report-content ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        .report-content ul li {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .report-content ul li:before {
+            content: "•";
+            color: #343a40;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+        
+        /* Style du pied de page */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        /* Améliorations pour les petits écrans */
+        @media (max-width: 768px) {
+            .accordion-section .card-header .btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+            .card-body {
+                padding: 15px;
+            }
+            nav .navbar-nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Assurez-vous de remplacer le src par l'image réelle de votre logo -->
+        <img src="https://www.ficosa.com/wp-content/themes/generatepress_child/media/logo_ficosa.png" alt="Logo de l'entreprise">
+    </header>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rapport Détaillé (Plan d'Action)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="medium.html">Rapport Moyen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="short.html">Rapport Court</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <div class="report-content">
+            <!-- Accordéon principal -->
+            <div class="accordion accordion-section" id="mainAccordion">
+                <!-- Introduction -->
+                <div class="card">
+                    <div class="card-header" id="headingIntro">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
+                            Introduction
+                            <div class="icon-wrapper">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                    </div>
+                    <div id="collapseIntro" class="collapse show" data-parent="#mainAccordion">
+                        <div class="card-body">
+                            <p>Bonjour, je suis <strong>Saham Loulidi</strong>, et ce rapport détaillé présente un plan complet pour atteindre les objectifs de l'entreprise et améliorer les performances de l'équipe de production à moyen et long terme. Nous adoptons un système d'équipe similaire à celui de la <strong>ruche d'abeilles</strong>, où chaque membre contribue de manière significative au succès de l'équipe. L'objectif est de renforcer la collaboration, la responsabilité et le développement continu de chaque membre de l'équipe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Objectifs -->
+                <div class="card">
+                    <div class="card-header" id="headingObjectives">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseObjectives" aria-expanded="true" aria-controls="collapseObjectives">
+                            Objectifs
+                            <div class="icon-wrapper">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                    </div>
+                    <div id="collapseObjectives" class="collapse show" data-parent="#mainAccordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Augmenter la productivité d'un certain pourcentage après consultation avec les directeurs</strong> :
+                                    <p>Augmenter progressivement et de manière réfléchie les taux de production afin d'assurer la continuité et la qualité.</p>
+                                </li>
+                                <li><strong>Améliorer la qualité et réduire les défauts au minimum possible</strong> :
+                                    <p>Appliquer des normes de qualité strictes et des révisions régulières pour améliorer le produit et satisfaire les clients.</p>
+                                </li>
+                                <li><strong>Créer un environnement de travail positif qui augmente l'interaction et la satisfaction parmi les membres de l'équipe</strong> :
+                                    <p>Renforcer la communication et la motivation continue pour que chacun se sente valorisé dans sa contribution.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan d'Action Détaillé -->
+                <div class="card">
+                    <div class="card-header" id="headingImplementation">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseImplementation" aria-expanded="true" aria-controls="collapseImplementation">
+                            Plan d'Action Détaillé
+                            <div class="icon-wrapper">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                    </div>
+                    <div id="collapseImplementation" class="collapse show" data-parent="#mainAccordion">
+                        <div class="card-body">
+                            <!-- Premier Mois -->
+                            <div class="accordion inner-accordion" id="monthOne">
+                                <div class="card">
+                                    <div class="card-header" id="headingMonth1">
+                                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseMonth1" aria-expanded="true" aria-controls="collapseMonth1">
+                                            Premier Mois : Planification et Fondation
+                                            <div class="icon-wrapper">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div id="collapseMonth1" class="collapse show" data-parent="#monthOne">
+                                        <div class="card-body">
+                                            <!-- Semaine 1 -->
+                                            <div class="accordion inner-accordion" id="week1Accordion">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingWeek1">
+                                                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek1" aria-expanded="true" aria-controls="collapseWeek1">
+                                                            Semaine 1 : Clarification des Objectifs et des Responsabilités
+                                                            <div class="icon-wrapper">
+                                                                <i class="fas fa-chevron-down"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div id="collapseWeek1" class="collapse show" data-parent="#week1Accordion">
+                                                        <div class="card-body">
+                                                            <p><strong>Jour 1 : Réunion générale avec l'équipe pour présenter les objectifs et le plan</strong></p>
+                                                            <p>Nous expliquerons nos objectifs, les méthodes que nous utiliserons, et soulignerons l'importance de la collaboration et de la coordination.</p>
+
+                                                            <p><strong>Jours 2-3 : Réunions individuelles avec chaque membre</strong></p>
+                                                            <p>Nous discuterons individuellement avec chaque personne pour expliquer son rôle et écouter ses suggestions et opinions.</p>
+
+                                                            <p><strong>Jours 4-5 : Distribution de documents explicatifs</strong></p>
+                                                            <p>Nous fournirons des documents détaillés afin que les membres puissent les consulter à tout moment.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Semaine 2 -->
+                                            <div class="accordion inner-accordion" id="week2Accordion">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingWeek2">
+                                                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek2" aria-expanded="true" aria-controls="collapseWeek2">
+                                                            Semaine 2 : Évaluation et Distribution des Tâches selon les Compétences
+                                                            <div class="icon-wrapper">
+                                                                <i class="fas fa-chevron-down"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div id="collapseWeek2" class="collapse show" data-parent="#week2Accordion">
+                                                        <div class="card-body">
+                                                            <p><strong>Jours 6-7 : Réalisation d'une évaluation des compétences et des expériences</strong></p>
+                                                            <p>Nous organiserons des enquêtes et des tests simples pour identifier les compétences de chaque membre.</p>
+
+                                                            <p><strong>Jour 8 : Analyse des résultats</strong></p>
+                                                            <p>Nous compilerons les résultats et identifierons les domaines de force de chacun.</p>
+
+                                                            <p><strong>Jours 9-10 : Élaboration d'un plan de distribution des tâches</strong></p>
+                                                            <p>Nous assignerons des tâches adaptées à chaque membre pour assurer une production efficace.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Semaine 3 -->
+                                            <div class="accordion inner-accordion" id="week3Accordion">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingWeek3">
+                                                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek3" aria-expanded="true" aria-controls="collapseWeek3">
+                                                            Semaine 3 : Orientation et Formation
+                                                            <div class="icon-wrapper">
+                                                                <i class="fas fa-chevron-down"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div id="collapseWeek3" class="collapse show" data-parent="#week3Accordion">
+                                                        <div class="card-body">
+                                                            <p><strong>Jours 11-13 : Offrir des formations</strong></p>
+                                                            <p>Nous fournirons des formations dans les domaines nécessitant un développement.</p>
+
+                                                            <p><strong>Jours 14-15 : Élaboration d'un guide des procédures de travail</strong></p>
+                                                            <p>Nous préparerons un guide complet des étapes et des procédures pour assurer la clarté de tous.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Semaine 4 -->
+                                            <div class="accordion inner-accordion" id="week4Accordion">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingWeek4">
+                                                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek4" aria-expanded="true" aria-controls="collapseWeek4">
+                                                            Semaine 4 : Début de l'Exécution et Suivi
+                                                            <div class="icon-wrapper">
+                                                                <i class="fas fa-chevron-down"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                    <div id="collapseWeek4" class="collapse show" data-parent="#week4Accordion">
+                                                        <div class="card-body">
+                                                            <p><strong>Jour 16 : Commencer à travailler selon les nouveaux plans</strong></p>
+                                                            <p>Nous commencerons à travailler selon les plans que nous avons établis.</p>
+
+                                                            <p><strong>Jours 17-20 : Suivi quotidien des progrès</strong></p>
+                                                            <p>Nous surveillerons les progrès et nous assurerons que tout se passe bien.</p>
+
+                                                            <p><strong>Jour 21 : Réunion hebdomadaire de révision</strong></p>
+                                                            <p>Nous nous réunirons pour discuter des réalisations et des défis, et ajusterons le cap si nécessaire.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Deuxième Mois -->
+                                <div class="accordion inner-accordion" id="monthTwo">
+                                    <div class="card">
+                                        <div class="card-header" id="headingMonth2">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseMonth2" aria-expanded="true" aria-controls="collapseMonth2">
+                                                Deuxième Mois : Prévention et Développement
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseMonth2" class="collapse show" data-parent="#monthTwo">
+                                            <div class="card-body">
+                                                <!-- Semaine 5 -->
+                                                <div class="accordion inner-accordion" id="week5Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek5">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek5" aria-expanded="true" aria-controls="collapseWeek5">
+                                                                Semaine 5 : Analyse des Racines des Problèmes
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek5" class="collapse show" data-parent="#week5Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Jours 22-23 : Collecte des données sur les problèmes précédents</strong></p>
+                                                                <p>Nous collecterons des informations sur les problèmes survenus auparavant.</p>
+
+                                                                <p><strong>Jour 24 : Atelier d'analyse des causes profondes</strong></p>
+                                                                <p>Nous nous réunirons tous ensemble pour essayer de comprendre les causes réelles des problèmes.</p>
+
+                                                                <p><strong>Jour 25 : Élaboration d'un plan pour traiter les causes</strong></p>
+                                                                <p>Nous définirons des solutions pour éviter la répétition des mêmes problèmes.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 6 -->
+                                                <div class="accordion inner-accordion" id="week6Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek6">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek6" aria-expanded="true" aria-controls="collapseWeek6">
+                                                                Semaine 6 : Mise en Œuvre des Mesures Préventives
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek6" class="collapse show" data-parent="#week6Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Jours 26-27 : Mise à jour des politiques et procédures de travail</strong></p>
+                                                                <p>Nous ajusterons les politiques en fonction des enseignements tirés de l'analyse.</p>
+
+                                                                <p><strong>Jour 28 : Formation de l'équipe sur les nouveaux changements</strong></p>
+                                                                <p>Nous expliquerons les changements aux membres et les formerons à leur utilisation.</p>
+
+                                                                <p><strong>Jours 29-30 : Mise en œuvre des mesures et suivi de leur conformité</strong></p>
+                                                                <p>Nous commencerons à appliquer les nouvelles mesures et nous assurerons que tout le monde les respecte.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Semaine 7 -->
+                                                    <div class="accordion inner-accordion" id="week7Accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingWeek7">
+                                                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek7" aria-expanded="true" aria-controls="collapseWeek7">
+                                                                    Semaine 7 : Développement des Plans de Contingence
+                                                                    <div class="icon-wrapper">
+                                                                        <i class="fas fa-chevron-down"></i>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                            <div id="collapseWeek7" class="collapse show" data-parent="#week7Accordion">
+                                                                <div class="card-body">
+                                                                    <p><strong>Jour 31 : Identification des risques potentiels</strong></p>
+                                                                    <p>Nous réfléchirons aux problèmes susceptibles de se produire et nous préparerons à les affronter.</p>
+
+                                                                    <p><strong>Jours 32-33 : Élaboration du Plan "A" pour les petits problèmes</strong></p>
+                                                                    <p>Nous développerons des solutions rapides pour les problèmes mineurs.</p>
+
+                                                                    <p><strong>Jours 34-35 : Élaboration du Plan "B" pour les grandes crises</strong></p>
+                                                                    <p>Nous préparerons des plans alternatifs pour les problèmes majeurs afin que la production ne s'arrête pas.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Semaine 8 -->
+                                                    <div class="accordion inner-accordion" id="week8Accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingWeek8">
+                                                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek8" aria-expanded="true" aria-controls="collapseWeek8">
+                                                                    Semaine 8 : Mise en Place d'un Système de Vote
+                                                                    <div class="icon-wrapper">
+                                                                        <i class="fas fa-chevron-down"></i>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                            <div id="collapseWeek8" class="collapse show" data-parent="#week8Accordion">
+                                                                <div class="card-body">
+                                                                    <p><strong>Jour 36 : Présentation du système de vote à l'équipe</strong></p>
+                                                                    <p>Nous expliquerons à l'équipe comment utiliser le vote pour les décisions importantes.</p>
+
+                                                                    <p><strong>Jour 37 : Formation sur son utilisation</strong></p>
+                                                                    <p>Nous organiserons une formation pratique sur le système.</p>
+
+                                                                    <p><strong>Jours 38-40 : Application pratique à travers une décision réelle</strong></p>
+                                                                    <p>Nous testerons le système avec une décision réelle et observerons son fonctionnement.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Troisième Mois -->
+                                <div class="accordion inner-accordion" id="monthThree">
+                                    <div class="card">
+                                        <div class="card-header" id="headingMonth3">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseMonth3" aria-expanded="true" aria-controls="collapseMonth3">
+                                                Troisième Mois : Renforcement de l'Environnement de Travail
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseMonth3" class="collapse show" data-parent="#monthThree">
+                                            <div class="card-body">
+                                                <!-- Semaine 9-10 -->
+                                                <div class="accordion inner-accordion" id="week910Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek910">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek910" aria-expanded="true" aria-controls="collapseWeek910">
+                                                                Semaine 9-10 : Organisation de Sessions de Brainstorming et d'Ateliers
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek910" class="collapse show" data-parent="#week910Accordion">
+                                                            <div class="card-body">
+                                                                <p>Nous organiserons des rencontres pour échanger des idées et améliorer les processus.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 11 -->
+                                                <div class="accordion inner-accordion" id="week11Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek11">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek11" aria-expanded="true" aria-controls="collapseWeek11">
+                                                                Semaine 11 : Programme "Employé Leader"
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek11" class="collapse show" data-parent="#week11Accordion">
+                                                            <div class="card-body">
+                                                                <p>Nous offrirons des opportunités aux membres souhaitant développer leurs compétences en leadership.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 12 -->
+                                                <div class="accordion inner-accordion" id="week12Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek12">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek12" aria-expanded="true" aria-controls="collapseWeek12">
+                                                                Semaine 12 : Organisation d'une Activité Sociale
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek12" class="collapse show" data-parent="#week12Accordion">
+                                                            <div class="card-body">
+                                                                <p>Nous organiserons une activité récréative pour rapprocher les membres.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quatrième Mois -->
+                                <div class="accordion inner-accordion" id="monthFour">
+                                    <div class="card">
+                                        <div class="card-header" id="headingMonth4">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseMonth4" aria-expanded="true" aria-controls="collapseMonth4">
+                                                Quatrième Mois : Suivi des Performances et Motivation
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseMonth4" class="collapse show" data-parent="#monthFour">
+                                            <div class="card-body">
+                                                <!-- Semaine 13-14 -->
+                                                <div class="accordion inner-accordion" id="week1314Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek1314">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek1314" aria-expanded="true" aria-controls="collapseWeek1314">
+                                                                Semaine 13-14 : Évaluation à Mi-Parcours des Performances Individuelles et Collectives
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek1314" class="collapse show" data-parent="#week1314Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Revue complète des progrès</strong></p>
+                                                                <p>Nous évaluerons nos progrès et identifierons les domaines nécessitant des améliorations.</p>
+                                                                <p>Nous réviserons les objectifs atteints et les défis rencontrés.</p>
+                                                                <p>Nous déterminerons les points forts et les domaines à améliorer pour chaque membre et pour l'équipe dans son ensemble.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 15 -->
+                                                <div class="accordion inner-accordion" id="week15Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek15">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek15" aria-expanded="true" aria-controls="collapseWeek15">
+                                                                Semaine 15 : Attribution de Récompenses et de Motivations pour les Réalisations Exceptionnelles
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek15" class="collapse show" data-parent="#week15Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Hommage aux meilleurs performants</strong></p>
+                                                                <p>Nous honorerons les membres qui se sont distingués dans leur travail.</p>
+                                                                <p>Nous distribuerons des certificats de reconnaissance et des récompenses motivantes.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 16 -->
+                                                <div class="accordion inner-accordion" id="week16Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek16">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek16" aria-expanded="true" aria-controls="collapseWeek16">
+                                                                Semaine 16 : Révision et Mise à Jour des Objectifs
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek16" class="collapse show" data-parent="#week16Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Modification des plans</strong></p>
+                                                                <p>Nous ajusterons les objectifs pour qu'ils soient en adéquation avec la réalité.</p>
+                                                                <p>Nous définirons les priorités pour la prochaine phase.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cinquième Mois -->
+                                <div class="accordion inner-accordion" id="monthFive">
+                                    <div class="card">
+                                        <div class="card-header" id="headingMonth5">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseMonth5" aria-expanded="true" aria-controls="collapseMonth5">
+                                                Cinquième Mois : Focus sur la Qualité
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseMonth5" class="collapse show" data-parent="#monthFive">
+                                            <div class="card-body">
+                                                <!-- Semaine 17-18 -->
+                                                <div class="accordion inner-accordion" id="week1718Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek1718">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek1718" aria-expanded="true" aria-controls="collapseWeek1718">
+                                                                Semaine 17-18 : Audit Complet des Opérations de Qualité
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek1718" class="collapse show" data-parent="#week1718Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Revue des Normes de Qualité</strong></p>
+                                                                <p>Nous examinerons nos opérations pour assurer une haute qualité.</p>
+                                                                <p>Nous réviserons toutes les procédures et les améliorerons si nécessaire.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 19-20 -->
+                                                <div class="accordion inner-accordion" id="week1920Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek1920">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek1920" aria-expanded="true" aria-controls="collapseWeek1920">
+                                                                Semaine 19-20 : Développement des Normes de Qualité
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek1920" class="collapse show" data-parent="#week1920Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Amélioration de la Qualité</strong></p>
+                                                                <p>Nous offrirons de nouvelles formations dans le domaine de la qualité.</p>
+                                                                <p>Nous testerons des techniques modernes pour améliorer davantage la qualité.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sixième Mois -->
+                                <div class="accordion inner-accordion" id="monthSix">
+                                    <div class="card">
+                                        <div class="card-header" id="headingMonth6">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseMonth6" aria-expanded="true" aria-controls="collapseMonth6">
+                                                Sixième Mois : Évaluation Finale et Préparation pour l'Avenir
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseMonth6" class="collapse show" data-parent="#monthSix">
+                                            <div class="card-body">
+                                                <!-- Semaine 21-22 -->
+                                                <div class="accordion inner-accordion" id="week2122Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek2122">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek2122" aria-expanded="true" aria-controls="collapseWeek2122">
+                                                                Semaine 21-22 : Sondage de Satisfaction des Employés
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek2122" class="collapse show" data-parent="#week2122Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Évaluation de la Satisfaction des Membres</strong></p>
+                                                                <p>Nous interrogerons les membres sur leur avis concernant l'environnement de travail.</p>
+                                                                <p>Nous recueillerons leurs suggestions pour des améliorations.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Semaine 23-24 -->
+                                                <div class="accordion inner-accordion" id="week2324Accordion">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingWeek2324">
+                                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseWeek2324" aria-expanded="true" aria-controls="collapseWeek2324">
+                                                                Semaine 23-24 : Planification pour l'Avenir
+                                                                <div class="icon-wrapper">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseWeek2324" class="collapse show" data-parent="#week2324Accordion">
+                                                            <div class="card-body">
+                                                                <p><strong>Revue et Planification</strong></p>
+                                                                <p>Nous discuterons de nos réalisations et des défis rencontrés.</p>
+                                                                <p>Nous préparerons un nouveau plan basé sur ce que nous avons appris.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment chaque point fonctionne en détail -->
+                    <div class="card">
+                        <div class="card-header" id="headingDetails">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetails" aria-expanded="true" aria-controls="collapseDetails">
+                                Comment chaque point fonctionne en détail
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseDetails" class="collapse show" data-parent="#mainAccordion">
+                            <div class="card-body">
+                                <div class="accordion inner-accordion" id="detailsAccordion">
+                                    <!-- Point 1 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail1">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail1" aria-expanded="true" aria-controls="collapseDetail1">
+                                                1. Clarification des Objectifs et des Responsabilités
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail1" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Utiliser des présentations, des vidéos et des exemples pratiques pour clarifier tous les points.</p>
+                                                <p>- Poser des questions aux membres s'ils ont des interrogations et les encourager à exprimer leurs opinions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 2 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail2">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail2" aria-expanded="true" aria-controls="collapseDetail2">
+                                                2. Distribution des Tâches selon les Compétences
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail2" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Créer une base de données contenant les compétences de chaque membre.</p>
+                                                <p>- Effectuer des mises à jour régulières pour tenir compte des changements de compétences ou d'intérêts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 3 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail3">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail3" aria-expanded="true" aria-controls="collapseDetail3">
+                                                3. Orientation et Suivi Continu
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail3" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Utiliser des outils de gestion de projet pour suivre les progrès.</p>
+                                                <p>- Organiser des réunions individuelles et collectives pour discuter des progrès et des défis.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 4 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail4">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail4" aria-expanded="true" aria-controls="collapseDetail4">
+                                                4. Analyse des Racines des Problèmes
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail4" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Utiliser la méthodologie des "cinq pourquoi" pour identifier la racine du problème.</p>
+                                                <p>- Partager les résultats avec toute l'équipe pour assurer une compréhension commune.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 5 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail5">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail5" aria-expanded="true" aria-controls="collapseDetail5">
+                                                5. Mise en Œuvre des Mesures Préventives
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail5" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Définir les responsabilités pour chaque mesure et assurer l'engagement de tous.</p>
+                                                <p>- Effectuer des révisions régulières pour évaluer l'efficacité des mesures.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 6 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail6">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail6" aria-expanded="true" aria-controls="collapseDetail6">
+                                                6. Plans de Contingence
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail6" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Former l'équipe à une réponse rapide en cas d'urgence.</p>
+                                                <p>- Réviser régulièrement les plans et les mettre à jour selon les besoins.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 7 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail7">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail7" aria-expanded="true" aria-controls="collapseDetail7">
+                                                7. Système de Vote (Après Consultation avec les Directeurs)
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail7" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Utiliser des applications électroniques faciles à utiliser.</p>
+                                                <p>- Assurer que le vote est transparent et que tous respectent les résultats.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 8 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail8">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail8" aria-expanded="true" aria-controls="collapseDetail8">
+                                                8. Renforcement de l'Environnement de Travail et de l'Énergie Positive
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail8" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Organiser des activités récréatives et sociales (Après consultation avec les directeurs).</p>
+                                                <p>- Offrir des récompenses et des reconnaissances pour les performances exceptionnelles (Après consultation avec les directeurs).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 9 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail9">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail9" aria-expanded="true" aria-controls="collapseDetail9">
+                                                9. Système de Gestion des Affaires Sociales pour les Employés
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail9" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Définir des moments pour écouter les problèmes des membres.</p>
+                                                <p>- Offrir un soutien psychologique et professionnel lorsque nécessaire.</p>
+                                                <p>- Encourager l'esprit d'équipe et la collaboration.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Point 10 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingDetail10">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseDetail10" aria-expanded="true" aria-controls="collapseDetail10">
+                                                10. Suivi et Évaluation Continus
+                                                <div class="icon-wrapper">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div id="collapseDetail10" class="collapse show" data-parent="#detailsAccordion">
+                                            <div class="card-body">
+                                                <p>- Utiliser des indicateurs de performance clairs et définis.</p>
+                                                <p>- Préparer des rapports mensuels et discuter des résultats avec l'équipe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Points Additionnels -->
+                    <div class="card">
+                        <div class="card-header" id="headingAdditional">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseAdditional" aria-expanded="true" aria-controls="collapseAdditional">
+                                Points Additionnels Après Consultation avec les Directeurs
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseAdditional" class="collapse show" data-parent="#mainAccordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>
+                                        <strong>Organisation d'Activités Récréatives et Sociales</strong>
+                                        <p>Excursions, fêtes ou compétitions internes.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Offrir des Récompenses et des Reconnaissances pour les Performances Exceptionnelles</strong>
+                                        <p>Certificats de reconnaissance, primes financières ou cadeaux symboliques.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Utilisation d'Applications Électroniques pour un Vote Transparent</strong>
+                                        <p>Applications telles que SurveyMonkey ou Google Forms.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Assurer la Participation de Tous et Respecter les Résultats du Vote</strong>
+                                        <p>Établir des règles claires et encourager la participation de tous.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Application de Nouvelles Technologies pour Améliorer la Qualité</strong>
+                                        <p>Adopter des outils modernes ou des logiciels avancés.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="card">
+                        <div class="card-header" id="headingConclusion">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseConclusion" aria-expanded="true" aria-controls="collapseConclusion">
+                                Conclusion
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseConclusion" class="collapse show" data-parent="#mainAccordion">
+                            <div class="card-body">
+                                <p>Grâce à ce plan détaillé, nous aspirons à atteindre nos objectifs de manière efficace et à améliorer les performances de l'équipe de manière durable, semblable à une <strong>ruche d'abeilles</strong> où chaque membre joue son rôle avec compétence et coordination.</p>
+                                <p>En se concentrant sur une planification rigoureuse et un suivi continu, nous pourrons faire face à tous les défis et réaliser le succès souhaité.</p>
+                                <p>Les points additionnels seront mis en œuvre après consultation avec les directeurs afin d'assurer leur alignement avec les politiques de l'entreprise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Saham Loulidi</p>
+    </footer>
+
+    <!-- Bibliothèques requises -->
+    <!-- Utilisation de la version complète de jQuery au lieu de la version allégée pour assurer le bon fonctionnement de toutes les fonctionnalités de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript pour faire tourner l'icône de la flèche lors de l'ouverture/la fermeture de l'accordéon -->
+    <script>
+        $(document).ready(function(){
+            // Lors de l'ouverture de la section
+            $('.collapse').on('show.bs.collapse', function(){
+                $(this).prev('.card-header').find('i').css('transform', 'rotate(180deg)');
+            });
+
+            // Lors de la fermeture de la section
+            $('.collapse').on('hide.bs.collapse', function(){
+                $(this).prev('.card-header').find('i').css('transform', 'rotate(0deg)');
+            });
+        });
+    </script>
+</body>
+</html>
